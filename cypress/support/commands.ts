@@ -42,6 +42,14 @@ Cypress.Commands.add('wdFormSubmit', (fName: string, lName: string, comment: str
   cy.get('[type="submit"]').click()
 })
 
+Cypress.Commands.add('navigateToHome', () => {
+  cy.visit("/")
+})
+
+Cypress.Commands.add('navigateToCheckbox', () => {
+  cy.visit("/" + "Dropdown-Checkboxes-RadioButtons/index.html")
+})
+
 Cypress.Commands.add('containsAssert', (selector: string, text: string) => {
   cy.get(selector).contains(text)
 })

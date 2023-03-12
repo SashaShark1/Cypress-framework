@@ -1,8 +1,9 @@
 describe("Verify checkboxes", () => {
 
   beforeEach(()=> {
-    cy.visit('https://www.webdriveruniversity.com')
-    cy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr', 'target').click()
+    cy.navigateToCheckbox()
+    // cy.visit('/')
+    // cy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr', 'target').click()
 })
     it("Check and validate checkboxes", ()=> {
          

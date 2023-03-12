@@ -1,7 +1,7 @@
 describe("Handling data via WD", () => {
 
     beforeEach(() => {
-      cy.visit("http://webdriveruniversity.com/");
+      cy.navigateToHome();
       cy.get("#data-table").invoke("removeAttr", "target").click({ force: true });
     })
   
