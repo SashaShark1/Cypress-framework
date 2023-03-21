@@ -11,6 +11,10 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
    defaultCommandTimeout: 10000,
    pageLoadTimeout: 120000,
+   screenshotOnRunFailure: true,
+   trashAssetsBeforeRuns: true,
+  //  viewportWidth: 1440,
+  //  viewportHeight: 2000,
    env: {
     first_name: "Sarah", 
     webdriverUniHp:   "https://www.webdriveruniversity.com",
