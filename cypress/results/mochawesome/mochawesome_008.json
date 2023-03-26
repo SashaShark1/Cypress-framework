@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-23T19:18:37.745Z",
+    "end": "2023-03-23T19:18:40.146Z",
+    "duration": 2401,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2c6496c1-2d9c-489a-afad-32594c2fe866",
+      "title": "",
+      "fullFile": "cypress\\e2e\\webdriver-uni\\iframe.cy.ts",
+      "file": "cypress\\e2e\\webdriver-uni\\iframe.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "34baccd8-54f9-4c5f-995d-85e5bade1030",
+          "title": "Handle IFRAME AND MODALS",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Handle WU iframe ",
+              "fullTitle": "Handle IFRAME AND MODALS Handle WU iframe ",
+              "timedOut": null,
+              "duration": 2349,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.webdriveruniversity.com');\ncy.get('#iframe').invoke('removeAttr', 'target').click();\ncy.get('#frame').then($iframe => {\n    const body = $iframe.contents().find('body');\n    cy.wrap(body).as('iframe');\n});\ncy.get('@iframe').find('#button-find-out-more').click();\ncy.get('@iframe').find('#myModal').as('modal');\ncy.get('@modal').should($expText => {\n    const text = $expText.text();\n    expect(text).to.include('Welcome to webdriveruniversity.com');\n});\ncy.get('@modal').contains('Close').click();",
+              "err": {},
+              "uuid": "93feb7ee-c10b-4e82-b8cd-883458753ea5",
+              "parentUUID": "34baccd8-54f9-4c5f-995d-85e5bade1030",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "93feb7ee-c10b-4e82-b8cd-883458753ea5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2349,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

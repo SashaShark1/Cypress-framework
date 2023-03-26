@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-23T19:17:49.041Z",
+    "end": "2023-03-23T19:17:51.788Z",
+    "duration": 2747,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3cb3042e-bc3a-4f91-8b69-0fab2791be6d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\webdriver-uni\\contact-us.cy.ts",
+      "file": "cypress\\e2e\\webdriver-uni\\contact-us.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7d2df6ef-d6ce-47e0-b82a-36be1b0972c4",
+          "title": "Test Contact us form",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to submit a successful submit via contact us form",
+              "fullTitle": "Test Contact us form Should be able to submit a successful submit via contact us form",
+              "timedOut": null,
+              "duration": 2694,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/' + 'Contact-Us/contactus.html');\ncy.document().should('have.property', 'charset').and('eq', 'UTF-8');\ncy.title().should('eq', 'WebDriver | Contact Us');\ncy.url().should('include', 'contactus');\n//   cy.get('[name=\"first_name\"]').type(this.data.first_name)\n//   cy.get('[name=\"last_name\"]').type(this.data.last_name)\n//   cy.get('[name=\"email\"]').type(this.data.email)\n//   cy.get('[name=\"message\"]').type('Message')\n//   cy.get('[type=\"submit\"]').click()\n//   cy.get('h1').should('have.text', 'Thank You for your Message!')\n// cy.wdFormSubmit(this.data.first_name, this.data.last_name,'Message', this.data.email)\n// cy.wdFormSubmit(Cypress.env(\"first_name\"), this.data.last_name,'Message', this.data.email)\ncontactUs.formSubmittion(this.data.first_name, this.data.last_name, this.data.email, 'Message');\ncy.containsAssert('h1', 'Thank You for your Message!');",
+              "err": {},
+              "uuid": "c8b51346-6621-4550-8a65-f8c576fe491a",
+              "parentUUID": "7d2df6ef-d6ce-47e0-b82a-36be1b0972c4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c8b51346-6621-4550-8a65-f8c576fe491a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2694,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

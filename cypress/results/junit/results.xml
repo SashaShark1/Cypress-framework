@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2023-03-23T18:47:33" tests="0" file="cypress\e2e\webdriver-uni\checkboxes.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Verify checkboxes" timestamp="2023-03-23T18:47:33" tests="3" time="1.439" failures="0">
+  
+  <testcase name="Verify checkboxes Check and validate checkboxes" time="0.752" classname="Check and validate checkboxes"></testcase>
+  
+  <testcase name="Verify checkboxes Uncheck and validate checkboxes" time="0.302" classname="Uncheck and validate checkboxes"></testcase>
+  
+  <testcase name="Verify checkboxes Check and validate multiple checkboxes" time="0.373" classname="Check and validate multiple checkboxes"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:48:31" tests="0" file="cypress\e2e\webdriver-uni\js-alerts.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Handle js alerts" timestamp="2023-03-23T18:48:31" tests="1" time="2.010" failures="0">
+  
+  <testcase name="Handle js alerts Validate js confirm using a stub" time="1.981" classname="Validate js confirm using a stub"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:48:37" tests="0" file="cypress\e2e\webdriver-uni\radio_button.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Verify radiobuttons" timestamp="2023-03-23T18:48:37" tests="2" time="2.607" failures="0">
+  
+  <testcase name="Verify radiobuttons Check and validate checkboxes" time="2.039" classname="Check and validate checkboxes"></testcase>
+  
+  <testcase name="Verify radiobuttons Validate specific checkboxes" time="0.564" classname="Validate specific checkboxes"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:48:50" tests="0" file="cypress\e2e\webdriver-uni\uploadFile.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Upload file" timestamp="2023-03-23T18:48:50" tests="2" time="4.669" failures="0">
+  
+  <testcase name="Upload file Upload file via WDU" time="2.554" classname="Upload file via WDU"></testcase>
+  
+  <testcase name="Upload file Upload no file via WDU" time="0.471" classname="Upload no file via WDU"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:48:18" tests="0" file="cypress\e2e\webdriver-uni\dropdown.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Interact with dropdown list" timestamp="2023-03-23T18:48:18" tests="2" time="2.455" failures="0">
+  
+  <testcase name="Interact with dropdown list Delect specific value via select" time="1.733" classname="Delect specific value via select"></testcase>
+  
+  <testcase name="Interact with dropdown list Delect specific value via select" time="0.695" classname="Delect specific value via select"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:47:21" tests="0" file="cypress\e2e\webdriver-uni\browser_navigation.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Validate homepage links" timestamp="2023-03-23T18:47:21" tests="1" time="7.343" failures="0">
+  
+  <testcase name="Validate homepage links Confirm links redirect to the correct pages" time="7.307" classname="Confirm links redirect to the correct pages"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:47:15" tests="0" file="cypress\e2e\webdriver-uni\autocomplete.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Autocomplete" timestamp="2023-03-23T18:47:15" tests="1" time="2.594" failures="0">
+  
+  <testcase name="Autocomplete Select specific product via autocomplete" time="2.586" classname="Select specific product via autocomplete"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:47:38" tests="0" file="cypress\e2e\webdriver-uni\contact-us.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Test Contact us form" timestamp="2023-03-23T18:47:38" tests="1" time="2.911" failures="0">
+  
+  <testcase name="Test Contact us form Should be able to submit a successful submit via contact us form" time="2.892" classname="Should be able to submit a successful submit via contact us form"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:48:43" tests="0" file="cypress\e2e\webdriver-uni\traversing-elements.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Traversing DOM elements in Cypress" timestamp="2023-03-23T18:48:43" tests="1" time="3.842" failures="0">
+  
+  <testcase name="Traversing DOM elements in Cypress siblings() To get all sibling DOM elements of elements" time="1.892" classname="siblings() To get all sibling DOM elements of elements"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:48:12" tests="0" file="cypress\e2e\webdriver-uni\data_table.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Handling data via WD" timestamp="2023-03-23T18:48:12" tests="2" time="3.011" failures="0">
+  
+  <testcase name="Handling data via WD Calculate the total age of all users" time="2.573" classname="Calculate the total age of all users"></testcase>
+  
+  <testcase name="Handling data via WD Calculate and assert the age of given user based on last name" time="0.422" classname="Calculate and assert the age of given user based on last name"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:48:25" tests="0" file="cypress\e2e\webdriver-uni\iframe.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Handle IFRAME AND MODALS" timestamp="2023-03-23T18:48:25" tests="1" time="2.683" failures="0">
+  
+  <testcase name="Handle IFRAME AND MODALS Handle WU iframe " time="2.653" classname="Handle WU iframe "></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:47:08" tests="0" file="cypress\e2e\webdriver-uni\actions.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Mouse actions" timestamp="2023-03-23T18:47:08" tests="1" time="3.942" failures="0">
+  
+  <testcase name="Mouse actions Click and hold" time="3.918" classname="Click and hold"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2023-03-23T18:47:45" tests="0" file="cypress\e2e\webdriver-uni\data.cy.ts" time="0.000" failures="0"></testsuite>
+<testsuite name="Datapicker" timestamp="2023-03-23T18:47:45" tests="2" time="21.334" failures="0">
+  
+  <testcase name="Datapicker Select date from datepicker" time="18.886" classname="Select date from datepicker"></testcase>
+  
+</testsuite>
+
+
+</testsuites>

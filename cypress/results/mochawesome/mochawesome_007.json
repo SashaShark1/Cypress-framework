@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-23T19:18:30.482Z",
+    "end": "2023-03-23T19:18:33.652Z",
+    "duration": 3170,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2b352106-6b01-41bc-a53e-7823ea70cac1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\webdriver-uni\\dropdown.cy.ts",
+      "file": "cypress\\e2e\\webdriver-uni\\dropdown.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bdfce884-fb5d-47d0-b87f-56bc47aaeef9",
+          "title": "Interact with dropdown list",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Delect specific value via select",
+              "fullTitle": "Interact with dropdown list Delect specific value via select",
+              "timedOut": null,
+              "duration": 2351,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.webdriveruniversity.com');\ncy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr', 'target').click();\ncy.get('#dropdowm-menu-1').select('c#');\ncy.get('#dropdowm-menu-2').select('maven').should('have.value', 'maven');\ncy.get('#dropdowm-menu-3').select('JQuery').contains('JQuery');",
+              "err": {},
+              "uuid": "5602e332-433d-4aa4-a1e2-fc0eacd648ba",
+              "parentUUID": "bdfce884-fb5d-47d0-b87f-56bc47aaeef9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delect specific value via select",
+              "fullTitle": "Interact with dropdown list Delect specific value via select",
+              "timedOut": null,
+              "duration": 776,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.webdriveruniversity.com');\ncy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr', 'target').click();\ncy.get('#dropdowm-menu-2').select('testng').should('have.value', 'testng');\ncy.get('#dropdowm-menu-2').select('TestNG').contains('TestNG');",
+              "err": {},
+              "uuid": "0d3f7dd4-a7ea-4a41-98ae-81ef23b31360",
+              "parentUUID": "bdfce884-fb5d-47d0-b87f-56bc47aaeef9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5602e332-433d-4aa4-a1e2-fc0eacd648ba",
+            "0d3f7dd4-a7ea-4a41-98ae-81ef23b31360"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3127,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

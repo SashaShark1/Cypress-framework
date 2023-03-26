@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.477" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-23T18:48:18" tests="0" file="cypress\e2e\webdriver-uni\dropdown.cy.ts" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Interact with dropdown list" timestamp="2023-03-23T18:48:18" tests="2" time="2.455" failures="0">
+    <testcase name="Interact with dropdown list Delect specific value via select" time="1.733" classname="Delect specific value via select">
+    </testcase>
+    <testcase name="Interact with dropdown list Delect specific value via select" time="0.695" classname="Delect specific value via select">
+    </testcase>
+  </testsuite>
+</testsuites>

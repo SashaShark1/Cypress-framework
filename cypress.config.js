@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: '715zky',
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
@@ -13,6 +14,14 @@ module.exports = defineConfig({
    pageLoadTimeout: 120000,
    screenshotOnRunFailure: true,
    trashAssetsBeforeRuns: true,
+   reporter: 'cypress-multi-reporters',
+  reporterOptions: {
+    configFile: 'reporter-config.json',
+  },
+  retries: {
+    runMode: 0,
+    openMode: 1
+  },
   //  viewportWidth: 1440,
   //  viewportHeight: 2000,
    env: {

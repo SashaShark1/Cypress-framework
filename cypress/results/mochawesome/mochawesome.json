@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-23T19:17:18.718Z",
+    "end": "2023-03-23T19:17:22.170Z",
+    "duration": 3452,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5544d34c-f603-4974-86c2-958e118711fe",
+      "title": "",
+      "fullFile": "cypress\\e2e\\webdriver-uni\\actions.cy.ts",
+      "file": "cypress\\e2e\\webdriver-uni\\actions.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d7551506-4679-4106-9e8d-5ddeadf2f5d7",
+          "title": "Mouse actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Click and hold",
+              "fullTitle": "Mouse actions Click and hold",
+              "timedOut": null,
+              "duration": 3402,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.webdriveruniversity.com\");\ncy.get(\"#actions\").invoke(\"removeAttr\", \"target\").click();\ncy.get('#click-box').trigger('mousedown', { which: 1 }).then(($el) => {\n    expect($el).to.have.css('background-color', 'rgb(0, 255, 0)');\n});\n//  .trigger('mouseup', {force: true}, )",
+              "err": {},
+              "uuid": "ad888e7e-aa10-4c87-9821-0615fdf3f8de",
+              "parentUUID": "d7551506-4679-4106-9e8d-5ddeadf2f5d7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ad888e7e-aa10-4c87-9821-0615fdf3f8de"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3402,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

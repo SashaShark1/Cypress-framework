@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.046" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-23T18:48:12" tests="0" file="cypress\e2e\webdriver-uni\data_table.cy.ts" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Handling data via WD" timestamp="2023-03-23T18:48:12" tests="2" time="3.011" failures="0">
+    <testcase name="Handling data via WD Calculate the total age of all users" time="2.573" classname="Calculate the total age of all users">
+    </testcase>
+    <testcase name="Handling data via WD Calculate and assert the age of given user based on last name" time="0.422" classname="Calculate and assert the age of given user based on last name">
+    </testcase>
+  </testsuite>
+</testsuites>

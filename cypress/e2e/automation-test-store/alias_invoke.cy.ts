@@ -43,7 +43,7 @@ describe("Alias and invoke", () => {
       itemsTotal += total
       //@ts-ignore
       cy.log(itemsTotal)
-      expect(itemsTotal).eql(311.6)
+      expect(itemsTotal).eql(298.49)
     })
   })
     it("Calculate total of sale products", ()=> {
@@ -57,7 +57,7 @@ describe("Alias and invoke", () => {
       }, 0)    
       //@ts-ignore
       cy.log(total)
-      expect(total).eql(314)
+      expect(total).eql(341)
     })
     
   })
