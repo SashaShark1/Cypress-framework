@@ -8,7 +8,7 @@ describe("Inspect ATS items using chain of commands", () => {
     } )
     it.only("Click on the first item using item text", ()=> {
           cy.visit('https://www.automationteststore.com/')
-        cy.get('a[title="Skinsheen Bronzer Stick"]').click().then(itemHeaderText => {
+        cy.get('a[title="Skinsheen Bronzer Stick"]').eq(1).click().then(itemHeaderText => {
           console.log('Selected the folowwing item: ' + itemHeaderText.text())})
         
     } )
