@@ -4,11 +4,14 @@
     "headless": "npx cypress run",
     "chrome": "npx cypress run --browser chrome",
     "cloud": "npx cypress run --record --key 922aa4f0-dcf5-4533-8de7-e8e739504364",
-    "cloud-WU": "npx cypress run --spec cypress/e2e/webdriver-uni/*",
+    "local-WU": "npx cypress run --spec cypress/e2e/webdriver-uni/*",
+    "local-ATS": "npx cypress run --spec cypress/e2e/automation-test-store/*",
+    "cloud-WU": "npx cypress run --spec cypress/e2e/webdriver-uni/* --record --key 922aa4f0-dcf5-4533-8de7-e8e739504364",
     "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
     "delete-report": "npm run delete:reports",
     "delete:reports": "rm cypress/results/* || true",
-    "mocha-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json"
+    "mocha-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
+    "crossbrowser": "npm run local-ATS -- --browser electron --headed & npm run local-ATS -- --browser edge --headed"
    
   },
   "devDependencies": {

@@ -5,9 +5,9 @@ describe("Test Contact us form", () => {
     Cypress.config("defaultCommandTimeout", 20000)
     const homePage = new HomePageWU()
     const contactUs = new ContactUsWU()
-    before(function (){
-       cy.viewport(550, 750)
-    })
+    // before(function (){
+    //    cy.viewport(550, 750)
+    // })
     beforeEach(function (){
         cy.fixture('example').then(function(data) {
             this.data = data
@@ -15,7 +15,7 @@ describe("Test Contact us form", () => {
         })
     })
     
-    it.only("Should be able to submit a successful submit via contact us form", function () {
+    it("Should be able to submit a successful submit via contact us form", function () {
           cy.visit('/' + 'Contact-Us/contactus.html')
           cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
          cy.title().should('eq', 'WebDriver | Contact Us')
@@ -51,6 +51,17 @@ describe("Test Contact us form", () => {
     homePage.visitHomePage()
     // cy.pause()
     homePage.clickContactUs()
+  } )
+
+    it.only("Depends on browser", ()=> {
+        if(Cypress.isBrowser('firefox')) {
+
+        } else {
+            homePage.visitHomePage()    
+            homePage.clickContactUs()
+            cy.log("Its chrome")
+        }
+   
   } )
 //   npx cypress run --browser chrome --spec cypress/e2e/webdriver-uni/contact-us.cy.ts --env first_name=Bill
 })
